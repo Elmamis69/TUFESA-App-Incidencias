@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  },
+  "name": "tufesa-app-incidencias",
+  "description": "Este repositorio es para el equipo de practicantes de TUFESA area de TI.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Santana",
+  "license": "ISC"
+}
