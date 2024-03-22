@@ -1,5 +1,5 @@
 const EmpleadoDAO = require("../dataAccess/empleadoDAO");
-const { AppError } = require("../utils/AppError");
+const { AppError } = require("../utils/appError");
 
 class EmpleadoController {
   static async crearEmpleado(req, res, next) {
@@ -10,8 +10,9 @@ class EmpleadoController {
       }
 
       const empleadoData = {numero, correo, RFC};
-      const empleado = await EmpleadoDAO.crear(empleadoData);
-      res.status(201).json(producto);
+      const empleado = await EmpleadoDAO.crear();
+      console.log(empleadoData)
+      res.status(201).json(empleado);
 
     } catch (e) {
       next(new AppError("Error al crear empleado", 500));

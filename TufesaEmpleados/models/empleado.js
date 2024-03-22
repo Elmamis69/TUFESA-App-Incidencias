@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const empleadoSchema = new mongoose.Schema({
     numero:{
-        type: number,
+        type: Number,
         required: true
     },
 
@@ -17,4 +17,4 @@ const empleadoSchema = new mongoose.Schema({
     }
 })
 
-module.exports = moongose.module('empleado', empleadoSchema);
+module.exports = mongoose.model('empleado', empleadoSchema);
